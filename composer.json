@@ -1,0 +1,29 @@
+{
+  "name": "yak-digital/websockets",
+  "type": "typo3-cms-extension",
+  "description": "",
+  "authors": [],
+  "require": {
+    "typo3/cms-core": "^12.4",
+    "openswoole/core": "^22.1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "YakDigital\\Websockets\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "YakDigital\\Websockets\\Tests\\": "Tests"
+    }
+  },
+  "replace": {
+    "yak_websockets": "self.version",
+    "typo3-ter/yak-websockets": "self.version"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "yak_websockets"
+    }
+  }
+}
